@@ -1,27 +1,22 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable */
-import Building from "./5-building"
-class SkyHighBuilding extends Building{
-    constructor(sqft, floors){
-        super(sqft)
-        this._floors = floors
+import Building from './5-building';
 
-        // if (this.constructor !== SkyHighBuilding && this.evacuationWarningMessage === undefined) {
-        //     throw new Error('Evacuate slowly the NUMBER_OF_FLOORS floors');
-        //   }
-    }
+export default class SkyHighBuilding extends Building {
+  constructor(sqrt, floors) {
+    super(sqrt);
+    this._floors = floors;
+  }
 
-    set floors(number) {
-        return this._floors = number;
-    }
-    
-    get floors() {
-        return this._floors;
-    }
+  set floors(floors) {
+    this._floors = floors;
+  }
 
-    evacuationWarningMessage(){
-        return "Evacuate slowly the NUMBER_OF_FLOORS floors"
-    }
+  get floors() {
+    return this._floors;
+  }
+
+  evacuationWarningMessage() {
+    return `Evacuate slowly the ${this._floors} floors`;
+  }
 }
-
-export default SkyHighBuilding
