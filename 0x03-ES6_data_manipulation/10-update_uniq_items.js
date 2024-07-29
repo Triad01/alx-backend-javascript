@@ -1,13 +1,12 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable */
-export default function updateUniqueItems(map){
-    for (const [key, value] of map){
-        if (value === undefined){
-            throw new Error("Cannot process")
-        }
-        else if( value === 1){
-                map.set(key, 100)
-        }
+export default function updateUniqueItems(map) {
+    if (!(map instanceof Map)) {
+      throw new Error('Cannot process');
     }
-    return map
-}
+    map.forEach((value, key) => {
+      if (value === 1) {
+        map.set(key, 100);
+      }
+    });
+  }
