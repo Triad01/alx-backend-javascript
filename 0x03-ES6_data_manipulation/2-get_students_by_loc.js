@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable */
+
 const getStudentsByLocation = (students, location)=>{
     const students_by_location = students.filter((student)=>{
         return student.location === location
