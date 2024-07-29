@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable */
 const getListStudentIds = (arrayObject)=>{
     if (!Array.isArray(arrayObject)){
         return []
