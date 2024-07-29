@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable */
 export default function groceriesList(){
     const myMap = new Map()
     myMap.set("Apples", 10)

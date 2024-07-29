@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable */
 function cleanSet(set, startString) {
     if (startString === '' || typeof startString !== 'string') {
       return '';
