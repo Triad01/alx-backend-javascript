@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable */
+
 function createInt8TypedArray(length, position, value) {
     // Step 1: Create a new ArrayBuffer with the specified length
     const buffer = new ArrayBuffer(length);

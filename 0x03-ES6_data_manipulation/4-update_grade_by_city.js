@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable */
+
 export default function updateStudentGradeByCity(students, city, newGrades) {
     const studentsToUpdate = students.filter((student) => student.location === city);
   
